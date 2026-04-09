@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'FivoSans';
+    src: url(FivoSans-Black.otf);
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: #ffa2cb;
+    display: flex;
+}
+
+.game-text{
+    font-family: 'FivoSans';
+    font-size: 88px;
+    color: #FFF6FA;
+    padding: 32px;
+}
+
+.span-text{
+    font-size: 140px;
+    color:#BB3E72;
+}
+
+.buttons{
+    font-family: "Lilita One", sans-serif;
+    font-size: 48px;
+    width: 395px;
+    height: 104px;
+    color: #5555A2;
+    background-color: #FFD1E4;
+    border:#BB3E72 solid 18px ;
+    border-radius: 32px;
+    margin: 32px 32px 0px 32px;
+    cursor:pointer; 
+}
+
+.shark-gif{
+    margin-top: 200px;
+}
+
+.text-erro{
+    font-family: "Lilita One", sans-serif;
+    font-size: 88px;
+    color: #FFD1E4;
+    padding: 32px;
+    margin-top: 120px;
+    margin-left: 120px;
+}
+
+#days-passed{
+    color: #FFF6FA;
+        font-family: 'FivoSans';
+    font-size: 88px;
+}

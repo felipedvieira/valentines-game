@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Valentine</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <p class="game-text">Você tem meu coração!!</p>
+        <div style="display:flex;">
+            <img src="heart 1.gif" alt="" style="width: 463px; height: 463px;">
+            <img src="trophy 1.gif" alt="" style="width: 480px; height: 480px;">
+        </div>
+        <p id="days-passed"></p>
+
+<script>
+  const startDate = new Date("2024-01-01"); // Your past date
+  const today = new Date();
+  
+  // Calculate difference in milliseconds
+  const diffInMs = today - startDate;
+  
+  // Convert milliseconds to days (1000ms * 60s * 60m * 24h)
+  const daysSince = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+
+  document.getElementById("days-passed").innerHTML = daysSince + " dias te amando. Te amo!";
+</script>
+    </div>
+</body>
+
+</html>
